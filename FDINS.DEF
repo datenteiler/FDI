@@ -11,7 +11,7 @@ LANG_AUTHOR=Christian Imhorst
 LANG_NAME=German
 
 ; Debug mode pause
-PRESSKEY="Drücke eine Taste..."
+PRESSKEY="Drücken Sie eine beliebige Taste..."
 
 ; Backing up old OS
 BACKUP_FRAME=/w60 /h7 /c
