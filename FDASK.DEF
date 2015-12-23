@@ -42,7 +42,7 @@ DELETE_FRAME=/w55 /h8 /c
 DELETE_OPTS=/w42 /h4 /c
 DELETE?=Lösche alle alten Dateien von /f %1 %2 /f %3 /s- ?
 DELETEY="  Ja - Starte mit einer frischen Installation."
-DELETEN="  Nein  - Lasse die alten Datein wo sie sind."
+DELETEN="  Nein  - Lasse die alten Dateien wo sie sind."
 
 ; FDASK500 - Advanced mode transfer system files
 XFER_FRAME=/w55 /h8 /c
