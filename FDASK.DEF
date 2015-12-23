@@ -1,14 +1,14 @@
 *******************************************************************************
-FreeDOS 1.2 Installer English Translation.
-Provided by: Jerome Shidel
-Contact Email: jerome@shidel.net
-Created/Modified: 12/17/2015
+FreeDOS 1.2 Installer German Translation.
+Provided by: Christian Imhorst
+Contact Email: christian.imhorst@gmail.com
+Created/Modified: 12/23/2015
 Released Under GPL v2.0 License.
 *******************************************************************************
 
 ; LANG_AUTHOR is unused at present, but you should set it to your name.
-LANG_AUTHOR=Jerome Shidel
-LANG_NAME=English
+LANG_AUTHOR=Christian Imhorst
+LANG_NAME=German
 
 ; FDASK000 - Reserved
 
@@ -19,11 +19,11 @@ BACKUP_FRAME=/w65 /h10 /c
 BACKUP_OPTS=/w42 /h4 /c
 BACKUPADV_FRAME=/w65 /h11 /c
 BACKUPADV_OPTS=/w42 /h5 /c
-BACKUP=A previous operating system was detected on drive /f %1 %2 /f %3 /s- .
-BACKUP?=Do you wish to backup the old files before installing?
-BACKUPY="  Yes - Please backup first."
-BACKUPZ="  Yes - Please backup as zip archive."
-BACKUPN="  No  - Install without backing up."
+BACKUP=Es wurde ein Betriebssystem erkannt auf Laufwerk /f %1 %2 /f %3 /s- .
+BACKUP?=Möchten Sie die Daten sichern, bevor die Installation beginnt?
+BACKUPY="  Ja - Bitte Daten sichern."
+BACKUPZ="  Ja - Bitte Daten in einem Zip-Archiv sichern."
+BACKUPN="  Nein  - Installiere ohne Datensicherung."
 
 ; FSASK100 - Advanced mode
 TARGET_FRAME=/w50 /h7 /c
