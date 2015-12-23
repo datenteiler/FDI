@@ -1,20 +1,20 @@
 *******************************************************************************
-FreeDOS 1.2 Installer English Translation.
-Provided by: Jerome Shidel
-Contact Email: jerome@shidel.net
-Created/Modified: 12/17/2015
+FreeDOS 1.2 Installer German Translation.
+Provided by: Christian Imhorst
+Contact Email: christian.imhorst@gmail.com
+Created/Modified: 12/23/2015
 Released Under GPL v2.0 License.
 *******************************************************************************
 
 ; LANG_AUTHOR is unused at present, but you should set it to your name.
-LANG_AUTHOR=Jerome Shidel
-LANG_NAME=English
+LANG_AUTHOR=Christian Imhorst
+LANG_NAME=German
 
 ; FDICLS - Title
-TITLE=/s- /f %1 "%2 " /f %3 "%4" /f %1 " Installer"
+TITLE=/s- /f %1 "%2 " /f %3 "%4" /f %1 " Installationsprogramm"
 
 ; STAGE300 - Initial welcome screen message
-LANG_ASK="Please select you language."
+LANG_ASK="Bitte Sprache auswählen."
 LANG_EN=English
 LANG_ES=Spanish
 LANG_FR=French
@@ -23,42 +23,42 @@ LANG_EO=Esperanto
 
 HELLO_FRAME=/w66 /h10 /c
 HELLO_OPTS=/w40 /h4 /c
-HELLO=/s- "Welcome to the installation program for " /f %1 "%2" /f %3 .
-HELLO_ADV=/s- "Welcome to the advanced installer for " /f %1 "%2" /f %3 .
-PROCEED?="Do you wish to proceed?"
-CONTINUE="  Yes - Continue with installation."
-EXIT="  No  - Return to DOS."
+HELLO=/s- "Willkommen zum Installationsprogramm für " /f %1 "%2" /f %3 .
+HELLO_ADV=/s- "Willkommen zum erweiterten Installationsprogramm für " /f %1 "%2" /f %3 .
+PROCEED?="Möchten Sie fortfahren?"
+CONTINUE="  Ja - Weiter mit Installation."
+EXIT="  Nein  - Zurück zu DOS."
 
 ; STAGE400 - Partition screen specific
 NOPART_FRAME=/w60 /h10 /c
 NOPART_OPTS=/w40 /h4 /c
-NOPART=/s- "Drive " /f  %1 %2 /f %3 " does not appear to be partitioned."
-PART?="Do you wish to partition your drive?"
-PART_YES="  Yes - Launch Partitioner."
+NOPART=/s- "Laufwerk " /f  %1 %2 /f %3 " scheint nicht partitioniert zu sein."
+PART?="Soll das Laufwerk partitioniert werden?"
+PART_YES="  Ja - Laufwerk partitionieren."
 ; EXIT
 
 ; STAGE400 - After partitioned specific
 PARTED_FRAME=/w62 /h11 /c
 PARTED_OPTS=/w40 /h4 /c
-PARTED=/s- "You must reboot your computer for the new partitioning" /p "scheme to take effect."
-REBOOT?="Do you wish to reboot now?"
-REBOOT_YES="  Yes - Please reboot now."
+PARTED=/s- "Der Computer muss neu gestartet werden," /p "damit die neue Partition wirksam wird."
+REBOOT?="Soll jetzt neu gestartet werden?"
+REBOOT_YES="  Ja - Bitte jetzt neu starten."
 ; EXIT
-REBOOT="Your computer should now reboot."
+REBOOT="Der Computer sollte jetzt neu starten."
 
 ; STAGE500 - Formating specific
 NOFORMAT_FRAME=/w55 /h10 /c
 NOFORMAT_OPTS=/w45 /h4 /c
 NOFORMATADV_FRAME=/w55 /h11 /c
 NOFORMATADV_OPTS=/w45 /h5 /c
-NOFORMAT=/s-  "Drive " /f %1 %2 /f %3 " does not appear to be formatted."
-FORMAT?="Do you wish to format your drive?"
-FORMAT_YES="  Yes - Please erase and format drive %1."
-FORMATADV_QUICK="  Yes - Quick erase and format drive %1."
-FORMATADV_SLOW="  Yes - Full erase and format drive %1."
+NOFORMAT=/s-  "Laufwerk " /f %1 %2 /f %3 " scheint nicht formatiert zu sein."
+FORMAT?="Soll das Laufwerk formatiert werden?"
+FORMAT_YES="  Ja - Bitte lösche und formatiere Laufwerk %1."
+FORMATADV_QUICK="  Ja - Schnelles löschen und formatieren von Laufwerk %1."
+FORMATADV_SLOW="  Ja - Vollständiges löschen und formatieren von Laufwerk %1."
 ; EXIT
-FORMATTING=/s- /fGray "Formatting drive " /fWhite %1 /fGray ...
-PAUSE=/fLightGreen " Press a key... " /e
+FORMATTING=/s- /fGray "Formatiere Laufwerk " /fWhite %1 /fGray ...
+PAUSE=/fLightGreen " Drücken Sie eine beliebige Taste... " /e
 
 ; STAGE700 - Install preparation
 GATHERING_FRAME=/w66 /h5 /c
