@@ -62,71 +62,71 @@ PAUSE=/fLightGreen " Drücken Sie eine beliebige Taste... " /e
 
 ; STAGE700 - Install preparation
 GATHERING_FRAME=/w66 /h5 /c
-GATHERING="Gathering some information to prepare for the installation."
+GATHERING="Sammle ein paar Informationen, um die Installation vorzubereiten."
 
 ; STAGE800 - Installing
 INSTALL_FRAME=/w60 /h10 /c
 INSTALL_OPTS=/w46 /h4 /c
-INSTALL=/s- "We are now ready to install " /f %1 "%2" /f %3 .
-INSTALL?="Do you want to install now?"
-INSTALL_YES="  Yes - Please install %1."
+INSTALL=/s- "Wir sind nun bereit für die Installation " /f %1 "%2" /f %3 .
+INSTALL?="Möchten Sie jetzt installieren?"
+INSTALL_YES="  Ja - Bitte installiere %1."
 ; EXIT
 PREPARING_FRAME=/w38 /h5 /c
-PREPARING="Preparing for the installation."
+PREPARING="Die Installation wird vorbereitet."
 
 ; STAGE900 - All Done reboot?
 COMPLETE_FRAME=/w60 /h10 /c
 COMPLETE_OPTS=/w40 /h4 /c
-COMPLETE=/s- "Installation of " /f %1 "%2" /f %3 " is now complete."
+COMPLETE=/s- "Installation von " /f %1 "%2" /f %3 " ist jetzt vollständig."
 ; REBOOT?, REBOOT, EXIT
 
 ; FDSETUP - Installer Aborted
-ABORTED=/fWhite /bRed " The installation of %1 has been aborted." /e /fGray
+ABORTED=/fWhite /bRed " Die Installation von %1 wurde abgebrochen." /e /fGray
 
 ; FDSETUP - Missing Stage Error
-STAGE_ERROR=/s- "Unable to execute installer stage %1." /p "It is possible the installer is corrupt." /p "Please re-download it or try a different method of installation."
+STAGE_ERROR=/s- "Kann Installationsprogramm nicht ausführen Stand %1." /p "Möglicherweise ist das Installationsprogramm korrupt." /p "Bitte laden Sie das Installationsprogramm erneut herunter oder probieren Sie eine andere Methode zur Installation."
 
 ; FDICTRLC - Control-C specific
 CTRLC_FRAME=/w60 /h12 /c
 CTRLC_OPTS=/w44 /h6 /c
-CTRLC=/s- "You have pressed " /f %1 "CTRL-C" /f %2 .
-CTRLC?="Are you sure you wish to abort the installation?"
-CTRLCY="  Yes - Please return to DOS."
-CTRLCN="  No  - I want to continue."
-CTRLCA="  No  - Switch to Advanced Mode."
-CTRLCB="  No  - Switch to Basic Mode."
+CTRLC=/s- "Sie haben " /f %1 "CTRL-C gedrückt" /f %2 .
+CTRLC?="Möchten Sie die Installation abbrechen?"
+CTRLCY="  Ja - Bitte kehre zu DOS zurück."
+CTRLCN="  Nein  - Ich möchte fortfahren."
+CTRLCA="  Nein  - Wechsel zum erweiterten Modus."
+CTRLCB="  Nein  - Wechsel zum Basismodus."
 
 ; FDIFAIL - Installation failure error message box
 FAIL_FRAME=/w62 /h11 /c
 FAIL_OPTS=/w40 /h4 /c
 FAILADV_FRAME=/w62 /h13 /c
 FAILADV_OPTS=/w40 /h6 /c
-FAILH="A reboot may help."
-FAIL?="Do you wish to reboot now?"
-FAILY="  Yes - Please reboot now."
-FAILN="  No  - Return to DOS."
-FAILI="  No  - Ignore. (not recommended)"
-FAILR="The computer will now reboot."
+FAILH="Ein Neustart könnte helfen."
+FAIL?="Soll jetzt neu gestartet werden?"
+FAILY="  Ja - Bitte jetzt neu starten."
+FAILN="  Nein  - Kehre zu DOS zurück."
+FAILI="  Nein  - Ignorieren. (nicht empfohlen)"
+FAILR="Der Computer wird jetzt neu gestartet."
 
 ; FDNOTICE - Already installed notice.
-NOTICE.1=/r5/c32 /fGreen %1 /fCyan %2 /fGray is already installed.
-NOTICE.2=/r5/c32 You can start the installer manually by running "'" /s- /fCyan SETUP.BAT /fGray "'"
+NOTICE.1=/r5/c32 /fGreen %1 /fCyan %2 /fGray ist bereits installiert.
+NOTICE.2=/r5/c32 Das Installationsprogramm kann manuell gestartet werden mit "'" /s- /fCyan SETUP.BAT /fGray "'"
 
 ; Failure messages
-ERROR_BACKZIP="Making backup archive %1."
-ERROR_BACKUP="Error making the backup."
-ERROR_MKDOS="Unable to create '%1' directory."
-ERROR_PACKAGE="Unable to install the '%1' package."
-ERROR_SOURCE="Unable to install the '%1' source."
-ERROR_READC="Having a problem reading drive C:."
-ERROR_SHELL="Installation is not supported under your current shell."
-ERROR_MEDIA="Unable to locate the installation packages."
-ERROR_REMOS="Had a problem removing old system files."
-ERROR_XSYS="Error transfering system files to %1."
-ERROR_CONFIG="Problem copying new configuration files."
-ERROR_V8="Problem installing V8Power Tools."
+ERROR_BACKZIP="Erstelle Datensicherungsarchiv %1."
+ERROR_BACKUP="Fehler beim Erstellen der Datensicherung."
+ERROR_MKDOS="Das Verzeichnis '%1' kann nicht erstellt werden."
+ERROR_PACKAGE="Das Paket '%1' kann nicht installiert werden."
+ERROR_SOURCE="Die Quelldateien von '%1' können nicht installiert werden."
+ERROR_READC="Problem beim Lesen von Laufwerk C:."
+ERROR_SHELL="Die Installation wird von Ihrer aktuellen Shell nicht unterstützt."
+ERROR_MEDIA="Installationsdateien können nicht gefunden werden."
+ERROR_REMOS="Problem beim Löschen alter Systemdateien."
+ERROR_XSYS="Fehler beim Kopieren der Systemdateien nach %1."
+ERROR_CONFIG="Problem beim Kopieren neuer Konfigurationsdateien."
+ERROR_V8="Problem beim Installieren der V8Power Tools."
 
 ; AUTOEXEC.BAT messages
-AUTO_DONE=Done processing startup files /fCyan %1 /a7 and /fCyan %2 /a7
-AUTO_HELP=Type /fWhite %1 /fGray to get support on commands and navigation.
-AUTO_WELCOME=Welcome to the /fGreen %1 /fCyan %2 /fGray operating system ( /s- /fYellow "%3" /fGray )
+AUTO_DONE=Erfolgreiche Ausführung der Startdateien /fCyan %1 /a7 und /fCyan %2 /a7
+AUTO_HELP=Tippen Sie /fWhite %1 /fGray für Unterstützung bei Befehlen und der Navigation.
+AUTO_WELCOME=Willkommen zum /fGreen %1 /fCyan %2 /fGray Betriebssystem ( /s- /fYellow "%3" /fGray )
