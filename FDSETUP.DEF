@@ -67,7 +67,7 @@ GATHERING="Sammle ein paar Informationen, um die Installation vorzubereiten."
 ; STAGE800 - Installing
 INSTALL_FRAME=/w60 /h10 /c
 INSTALL_OPTS=/w46 /h4 /c
-INSTALL=/s- "Wir sind nun bereit für die Installation " /f %1 "%2" /f %3 .
+INSTALL=/s- "Wir sind nun bereit für die Installation von " /f %1 "%2" /f %3 .
 INSTALL?="Möchten Sie jetzt installieren?"
 INSTALL_YES="  Ja - Bitte installiere %1."
 ; EXIT
@@ -84,7 +84,7 @@ COMPLETE=/s- "Installation von " /f %1 "%2" /f %3 " ist jetzt vollständig."
 ABORTED=/fWhite /bRed " Die Installation von %1 wurde abgebrochen." /e /fGray
 
 ; FDSETUP - Missing Stage Error
-STAGE_ERROR=/s- "Kann Installationsprogramm nicht ausführen Stand %1." /p "Möglicherweise ist das Installationsprogramm korrupt." /p "Bitte laden Sie das Installationsprogramm erneut herunter oder probieren Sie eine andere Methode zur Installation."
+STAGE_ERROR=/s- "Kann Installationsprogramm nicht ausführen %1." /p "Möglicherweise ist das Installationsprogramm korrupt." /p "Bitte laden Sie das Installationsprogramm erneut herunter oder probieren Sie eine andere Methode zur Installation."
 
 ; FDICTRLC - Control-C specific
 CTRLC_FRAME=/w60 /h12 /c
@@ -105,7 +105,7 @@ FAILH="Ein Neustart könnte helfen."
 FAIL?="Soll jetzt neu gestartet werden?"
 FAILY="  Ja - Bitte jetzt neu starten."
 FAILN="  Nein  - Kehre zu DOS zurück."
-FAILI="  Nein  - Ignorieren. (nicht empfohlen)"
+FAILI="  Nein  - Ignorieren (nicht empfohlen)."
 FAILR="Der Computer wird jetzt neu gestartet."
 
 ; FDNOTICE - Already installed notice.
@@ -128,5 +128,5 @@ ERROR_V8="Problem beim Installieren der V8Power Tools."
 
 ; AUTOEXEC.BAT messages
 AUTO_DONE=Erfolgreiche Ausführung der Startdateien /fCyan %1 /a7 und /fCyan %2 /a7
-AUTO_HELP=Tippen Sie /fWhite %1 /fGray für Unterstützung bei Befehlen und der Navigation.
+AUTO_HELP=Geben Sie /fWhite %1 /fGray ein, um Unterstützung bei Befehlen und der Navigation zu erhalten.
 AUTO_WELCOME=Willkommen zum /fGreen %1 /fCyan %2 /fGray Betriebssystem ( /s- /fYellow "%3" /fGray )
