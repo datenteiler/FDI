@@ -54,7 +54,7 @@ XFERN="  Nein  - Keine Systemdateien kopieren."
 ; FDASK600 - Package group selection.
 PAC_FRAME=/w60 /h11 /c
 PAC_OPTS=/w42 /h7 /c
-PACS?=What /f %1 %2 /f %3 packages do you want to install?
+PACS?=Welche /f %1 %2 /f %3 Pakete möchten Sie installieren?
 PACBO="  Nur Basispakete installieren."
 PACBS="  Nur Basispakete mit Quelldateien installieren."
 PACAO="  Alle Pakete."
